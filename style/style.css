@@ -119,3 +119,16 @@ section {
   color: #FFFDFA;
   background-color: #F15D51;
 }
+
+/* Media Query */
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 50%;
+    flex-grow: 1;
+  }
+}  
