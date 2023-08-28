@@ -121,10 +121,11 @@ section {
 }
 
 /* Media Query */
-@media screen and (min-width: 500px) and (max-width: 799px) {
+@media screen and (min-width: 500px) {
   .card-container {
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 1200px;
   }
 
   .card {
@@ -132,3 +133,13 @@ section {
     flex-grow: 1;
   }
 }  
+
+@media screen and (min-width: 800px) {
+  .nav-items ul li a {
+    display: inline;
+  }
+
+  .hamburger-bar {
+    display: none;
+  }
+}
