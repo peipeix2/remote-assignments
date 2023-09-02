@@ -69,6 +69,7 @@ nav {
 .learn,
 .blog {
   display: none;
+  color: #5F6368;
 }
 
 .searchbar-account {
