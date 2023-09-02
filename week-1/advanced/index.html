@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Developers Mockup</title>
+  <script src="https://kit.fontawesome.com/e4e8c51ec5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style/normalize.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="nav-bar">
+      <div class="logo-hamburger">
+        <i class="hamburger fa-solid fa-bars"></i>
+        <img class="google-dev-logo" src="./assets/lockup-new.svg" alt="google-dev-logo">
+      </div>
+
+      <div class="menu-dropdowns">
+        <div class="product dropdown">
+          <span>Products<i class="fa-solid fa-caret-down"></i></span>
+          <div class="product-dropdown-content">
+            <!-- contents insert here -->
+          </div>
+        </div>
+        <a class="solutions" href="#">Solutions</a>
+        <a class="events" href="#">Events</a>
+        <a class="learn" href="#">Learn</a>
+        <div class="community-drop dropdown">
+          <span>Community<i class="fa-solid fa-caret-down"></i></span>
+          <div class="community-dropdown-content">
+            <!-- contents insert here -->
+          </div>
+        </div>
+        <a class="blog" href="#">Blog</a>
+        <div class="more dropdown">
+          <span>More<i class="fa-solid fa-caret-down"></i></span>
+          <div class="more-dropdown-content">
+            <!-- contents insert here -->
+          </div>
+        </div>
+      </div>
+
+      <div class="searchbar-account">
+        <div class="search-logo-mobile">
+          <i class="search-logo fas fa-search" aria-hidden="true"></i>
+        </div>
+        <div class="searchbar">
+          <i class="search-logo fas fa-search" aria-hidden="true"></i>
+          <input class="search-input" type="text" placeholder="Search">
+        </div>
+        <div class="nav-lan language-dropdown">
+          <a href="#"><i class="globe-icon fa-solid fa-globe"></i>English<i class="fa-solid fa-caret-down"></i></a>
+          <div class="language-dropdown-content">
+            <!-- contents insert here -->
+          </div>
+        </div>
+        <a class="ellipsis-link" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+        <a class="login-account" href="#">
+          <span class="login-user">G</span>
+        </a> 
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="header-row">
+      <div class="header-intro-col">
+        <h1 class="header-title">Build smarter, <br>ship faster</h1>
+        <p class="header-intro">Unlock creativity and simplify your workflow with open, integrated solutions.</p>
+      </div>
+
+      <div class="animation-dev-category-col">
+        <video autoplay muted>
+          <source src="./assets/build-smarter.mp4" type="video/mp4">
+        </video>
+        <div class="dev-category">
+          <h3>I'm building for:</h3>
+          <ul class="dev-options">
+            <li><a href="#">Mobile <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="#">Web <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="#">AI <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="#">Cloud <i class="fa-solid fa-arrow-right"></i></a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+  </header>
+  
+  <main>
+    <div class="container">
+      <!-- Featured products section -->
+      <section class="featured-products">
+        <h2>Featured products</h2>
+          <div class="card-container">
+            <!-- Insert data here -->
+          </div>
+          <button class="btn product-read-more">
+            View all developers products
+          </button>
+      </section>
+    
+
+      <!-- Trending News (Static) section -->
+      <section class="trending-news">
+        <div class="headline-photo-container">
+          <img class="headline-photo" src="./assets/makersuite_carousel.png" alt="makersuite-photo">
+        </div>
+        <div class="headline-content">
+          <p class="sub-heading">TRENDING NEWS</p>
+          <h3 class="headline"><a href="#">MakerSuite is now available in 180 countries</a></h3>
+          <p class="headline-outline">Sign up now to prototype AI applications with the PaLM 2 language model.</p>
+          <button class="btn news-read-more">Learn more</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- What's New in Android section -->
+    <div class="container-Android-news">
+      <section class="Android-news">
+        <div class="Android-image-container">
+          <img class="Android-image" src="/assets/giraffe_1440.png" alt="giraffe-img">
+        </div>
+        <div class="Android-headline-content headline-content">
+          <p class="sub-heading">WHAT'S NEW IN ANDROID</p>
+          <h3 class="Android-headline"><a href="#">Android Studio Giraffe is now stable</a></h3>
+          <p class="headline-outline">Featuring updates to Live Edit, Compose animation previews, a new Device Explorer, and more.</p>
+          <button class="btn Android-read-more">Download now</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Developer's activity section -->
+    <section class="container-dev-activity">
+      <div class="event activity-card">
+        <div class="activity-img-container">
+          <img class="activity-img" src="./assets/explore-your-interests_1440.jpeg" alt="developers-attend-events">
+        </div>
+        <div class="activity-content">
+          <img class="activity-logo" src="./assets/explore-interests-eyebrow.svg" alt="explore-your-interests">
+          <h3 class="activity-title"><a href="#">Find an event</a></h3>
+          <p class="activity-intro">Grow your knowledge through online and in-person developers events.</p>
+          <button class="btn-white activity-read-more">View events</button>
+        </div>
+      </div>
+
+      <div class="course activity-card">
+        <div class="activity-img-container">
+          <img class="activity-img" src="./assets/technical-skills_1440.jpeg" alt="developers-taking-course">
+        </div>
+        <div class="activity-content">
+          <img class="course-logo activity-logo" src="./assets/technical-skills-eyebrow.svg" alt="improve-technical skills">
+          <h3 class="activity-title"><a href="#">Improve technical skills</a></h3>
+          <p class="activity-intro">Keep up with Google technology. Sharpen skills and master new ones.</p>
+          <button class="btn-white activity-read-more">Start learning</button>
+        </div>
+      </div>
+
+      <div class="community activity-card">
+        <div class="activity-img-container">
+          <img class="activity-img" src="./assets/find-community_1440.png" alt="developers-community">
+        </div>
+        <div class="activity-content">
+          <img class="community-logo activity-logo" src="./assets/find-community-eyebrow.svg" alt="find-community">
+          <h3 class="activity-title"><a href="#">Join a community</a></h3>
+          <p class="activity-intro">Meet a diverse network, no matter where you are on your developer journey.</p>
+          <button class="btn-white activity-read-more">Explore communities</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media">
+      <h2>Follow Google for Developers</h2>
+      <div class="sm-card-container">
+        <!-- Insert contents here -->
+        </div> 
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section outer-link">
+        <ul class="connect-link-group">
+          <h3>Connect</h3>
+          <li class="footer-link"><a href="#">Blog</a></li>
+          <li class="footer-link"><a href="#">Instagram</a></li>
+          <li class="footer-link"><a href="#">LinkedIn</a></li>
+          <li class="footer-link"><a href="#">Twitter</a></li>
+          <li class="footer-link"><a href="#">Youtube</a></li>
+        </ul>
+
+        <ul class="programs-link-group">
+          <h3>Programs</h3>
+          <li class="footer-link"><a href="#">Women Techmakers</a></li>
+          <li class="footer-link"><a href="#">Google Developer Groups</a></li>
+          <li class="footer-link"><a href="#">Google Developer Experts</a></li>
+          <li class="footer-link"><a href="#">Accelerators</a></li>
+          <li class="footer-link"><a href="#">Google Developer Student Clubs</a></li>
+        </ul>
+
+        <ul class="consoles-link-group">
+          <h3>Developer consoles</h3>
+          <li class="footer-link"><a href="#">Google API Console</a></li>
+          <li class="footer-link"><a href="#">Google Cloud Platform Console</a></li>
+          <li class="footer-link"><a href="#">Google Play Console</a></li>
+          <li class="footer-link"><a href="#">Firebase Console</a></li>
+          <li class="footer-link"><a href="#">Actions on Google Console</a></li>
+          <li class="footer-link"><a href="#">Cast SDK Developer Console</a></li>
+          <li class="footer-link"><a href="#">Chrome Web Store Dashboard</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section google-link">
+        <ul class="google-link-group">
+          <a class="google-footer-link" href="#">
+            <img class="google-footer-logo" src="./assets/lockup-google-for-developers.svg" alt="google-logo">
+          </a>
+          <div class="google-footer-link-container">
+            <li class="footer-link"><a href="#">Android</a></li>
+            <li class="footer-link"><a href="#">Chrome</a></li>
+            <li class="footer-link"><a href="#">Firebase</a></li>
+            <li class="footer-link"><a href="#">Google Cloud Platform</a></li>
+            <li class="footer-link"><a href="#">All products</a></li>
+          </div>
+        </ul>
+      </div> 
+
+      <div class="footer-section footer-navigation">
+        <div class="footer-nav-items">
+          <div class="terms-privacy">
+            <a href="#">Terms&nbsp</a>
+            <span>|</span>
+            <a href="#">&nbspPrivacy</a>
+          </div>
+          <div class="subscribe-language">
+            <div class="subscribe">
+              <span>Sign up for the Google for Developers newsletter</span>
+              <button class="btn subs-button">Subscribe</button>
+            </div>
+            <div class="footer-lan language-dropdown">
+              <a href="#"><i class="globe-icon fa-solid fa-globe"></i>English<i class="fa-solid fa-caret-down"></i></a>
+              <div class="language-dropdown-content">
+                <!-- contents insert here -->
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
