@@ -56,7 +56,7 @@ nav {
   color: #5F6368;
 }
 
-.dropdown span:hover, .menu-dropdowns a {
+.dropdown span:hover, .menu-dropdowns a:hover {
   cursor: pointer;
   color: black;
 }
