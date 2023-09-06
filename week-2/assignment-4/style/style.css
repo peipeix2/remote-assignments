@@ -123,6 +123,11 @@ section {
   background-color: #F15D51;
 }
 
+.landing-page-button:hover {
+  cursor: pointer;
+  background-color: #a3332a;
+}
+
 /* Media Query */
 @media screen and (min-width: 500px) {
   .card-container {
