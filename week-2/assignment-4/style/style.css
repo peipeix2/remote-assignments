@@ -54,6 +54,8 @@ h1, h2, p, span {
 
 .close-icon {
   width: fit-content;
+  margin: 15px 15px 15px auto;
+  font-size: 30px;
 }
 
 .web-title, .web-logo, .hamburger-bar {
