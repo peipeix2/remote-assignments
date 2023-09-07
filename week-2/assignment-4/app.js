@@ -7,7 +7,11 @@ const closeIcon = document.querySelector('.close-icon')
 
 // Click the welcome block to change text
 welcomeBlock.addEventListener('click', (event) => {
-  event.target.firstElementChild.textContent = 'Have a Good Time!'
+  if (event.target.classList.contains('welcome-message')) {
+    event.target.textContent = 'Have a Good Time!'
+  } else {
+    event.target.firstElementChild.textContent = 'Have a Good Time!'
+  }
 })
 
 // Click the call-to-action button to show more cards
