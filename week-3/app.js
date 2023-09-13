@@ -19,7 +19,7 @@ app.get('/getData', (req, res) => {
   for (let i = 1; i <= number; i++) {
     sum += i
   }
-  res.send(`<h1>${sum}</h1>`)
+  res.send(`${sum}`)
 })
 
 app.listen(3000, () => {
