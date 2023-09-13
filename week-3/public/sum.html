@@ -6,10 +6,28 @@
   <title>Week-3</title>
 </head>
 <body>
-  <form action="/" method="post">
+  <form>
     <label name="number">Please enter a number</label>
-    <input type="number" name="number" placeholder="Ex. 5">
+    <input class="input" type="text" name="number" placeholder="Ex. 5">
     <button type="submit">Submit</button>
   </form>
+  <p class="answer">The answer is...</p>
 </body>
+<script>
+  const input = document.querySelector('.input')
+  const submitBtn = document.querySelector('button')
+  const answer = document.querySelector('.answer')
+  
+  submitBtn.addEventListener('click', () => {
+    event.preventDefault()
+    const xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState === 4) {
+        answer.innerHTML = xhr.responseText
+      }
+    }
+    xhr.open('GET', `http://localhost:3000/getData?number=${input.value}`)
+    xhr.send()
+  })
+</script>
 </html>
