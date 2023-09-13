@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 
+app.use(express.static('public'))
+
 app.get('/', (req, res) => {
   res.send('<h1>Hello World. This is the solution to Week-3 Assignment 1.</h1>')
 })
