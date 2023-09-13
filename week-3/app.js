@@ -8,10 +8,10 @@ app.get('/', (req, res) => {
 })
 
 app.get('/getData', (req, res) => {
-  const number = Number(req.query.number)
+  const number = req.query.number
   if (!number) {
     return res.send('Lack of Parameter.')
-  } else if (!Number.isInteger(number)) {
+  } else if (isNaN(number)) {
     return res.send('Wrong Parameter.')
   }
 
