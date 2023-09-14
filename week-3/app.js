@@ -34,7 +34,7 @@ app.get('/myName', (req, res) => {
   if (!username) {
     return res.render('signup')
   }
-  res.send(`Welcome, ${username}`)
+  res.render('signup', { username })
 })
 
 app.get('/trackName', (req, res) => {
