@@ -1,7 +1,10 @@
 extends layout.pug 
 
 block content
-  form(action='/trackName' method='get')
-    label Please type in your name 
-    input(type='text' name='name')
-    button(type='submit') Submit
+  if username 
+    h1.hello-msg Welcome, #{username}
+  else
+    form(action='/trackName' method='get')
+      label Please type in your name 
+      input(type='text' name='name')
+      button(type='submit') Submit
