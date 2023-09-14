@@ -27,11 +27,11 @@ app.get('/getData', (req, res) => {
 })
 
 app.get('/myName', (req, res) => {
-  const { username } = req.cookies
-  if (!username) {
+  const { name } = req.cookies
+  if (!name) {
     return res.render('signup')
   }
-  res.send(`Welcome, ${username}`)
+  res.send(`Welcome, ${name}`)
 })
 
 app.listen(3000, () => {
