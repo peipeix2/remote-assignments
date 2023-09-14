@@ -5,6 +5,8 @@ const cookieParser = require('cookie-parser')
 app.use(express.static('public'))
 app.use(cookieParser())
 
+app.set('view engine', 'pug')
+
 app.get('/', (req, res) => {
   res.send('<h1>Hello World. This is the solution to Week-3 Assignment 1.</h1>')
 })
@@ -27,7 +29,7 @@ app.get('/getData', (req, res) => {
 app.get('/myName', (req, res) => {
   const { username } = req.cookies
   if (!username) {
-    return res.send("Oops! Look like you haven't logged in yet.")
+    return res.render('signup')
   }
   res.send(`Welcome, ${username}`)
 })
