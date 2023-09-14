@@ -1,9 +1,7 @@
-doctype html
-html(lang="en")
-  head
-    title= SignUp
-  body
-    form(action='/trackName' method='get')
-      label Please type in your name 
-      input(type='text' name='name')
-    button(type='submit') Submit
+extends layout.pug 
+
+block content
+  form(action='/trackName' method='get')
+    label Please type in your name 
+    input(type='text' name='name')
+  button(type='submit') Submit
