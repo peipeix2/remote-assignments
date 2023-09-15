@@ -1,7 +1,9 @@
 const express = require('express')
 const app = express()
+const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static('public'))
 app.use(cookieParser())
 
@@ -16,9 +18,9 @@ app.get('/', (req, res) => {
 app.get('/getData', (req, res) => {
   const number = req.query.number
   if (!number) {
-    return res.send('Lack of Parameter.')
+    return res.json('Lack of Parameter.')
   } else if (isNaN(number)) {
-    return res.send('Wrong Parameter.')
+    return res.json('Wrong Parameter.')
   }
 
   let sum = 0
