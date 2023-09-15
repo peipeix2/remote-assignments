@@ -7,7 +7,7 @@ body {
   background-color: #36384a;
 }
 
-form {
+.add-sum, .signup {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -74,4 +74,14 @@ button:hover {
 
 .container p {
   line-height: 200%;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-container button {
+  width: 300px;
 }
