@@ -29,7 +29,7 @@
     xhr.onreadystatechange = () => {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
-          answer.innerHTML = xhr.responseText
+          answer.innerHTML = JSON.parse(xhr.responseText)
         } else if (xhr.status === 404) {
           const error = new Error(`${xhr.status}! The file is missing.`)
           answer.textContent = error
