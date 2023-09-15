@@ -39,6 +39,12 @@ app.get('/myName', (req, res) => {
   res.render('signup', { username })
 })
 
+// Add Logout Feature
+app.post('/myName', (req, res) => {
+  res.clearCookie('username')
+  res.redirect('/myName')
+})
+
 app.get('/trackName', (req, res) => {
   res.cookie('username', req.query.name)
   res.redirect('/myName')
