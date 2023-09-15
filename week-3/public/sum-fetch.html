@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week-3</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form>
+    <label name="number">Please enter a number</label>
+    <input class="input" type="text" name="number" placeholder="Ex. 5">
+    <button type="submit">Submit</button>
+  </form>
+  <p class="answer">The answer is...</p>
+</body>
+<script>
+  const input = document.querySelector('.input')
+  const submitBtn = document.querySelector('button')
+  const answer = document.querySelector('.answer')
+
+  function fetchData(num) {
+    fetch(`http://localhost:3000/getData?number=${num}`)
+      .then(res => res.json())
+      .then(displayData)
+      .catch(err => displayData(`Error! ${err}`))
+  }
+
+  function displayData(data) {
+    answer.textContent = data
+  }
+
+  submitBtn.addEventListener('click', () => {
+    const inputValue = input.value
+    event.preventDefault()
+    fetchData(inputValue)
+  })
+</script>
+</html>
