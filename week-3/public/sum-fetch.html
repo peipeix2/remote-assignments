@@ -24,14 +24,23 @@
   const answer = document.querySelector('.answer')
 
   function fetchData(num) {
-    fetch(`http://localhost:3000/getData?number=${num}`)
+    return fetch(`http://localhost:3000/getData?number=${num}`)
+      .then(checkStatus)
       .then(res => res.json())
       .then(displayData)
-      .catch(err => displayData(`Error! ${err}`))
+      .catch(err => displayData(`Something is wrong! ${err}`))
   }
 
   function displayData(data) {
     answer.textContent = data
+  }
+
+  function checkStatus(response) {
+    if (response.ok) {
+      return Promise.resolve(response)
+    } else {
+      return Promise.reject(new Error(response.statusText))
+    }
   }
 
   submitBtn.addEventListener('click', () => {
