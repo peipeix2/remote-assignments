@@ -1,10 +1,14 @@
 extends layout.pug 
 
 block content
-  if username 
-    h1.hello-msg Welcome, #{username}
+  if username
+    div.welcome-container 
+      h1.hello-msg Welcome, #{username}
+      //- Add Logout Button
+      form.logout(action='/myName' method='post')
+        button(type='submit') Log out
   else
-    form(action='/trackName' method='get')
+    form.signup(action='/trackName' method='get')
       label Please type in your name 
       input(type='text' name='name')
       button(type='submit') Submit
