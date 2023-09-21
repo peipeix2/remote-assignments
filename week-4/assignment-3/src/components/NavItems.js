@@ -23,6 +23,7 @@ const NavItems = () => {
   // if true, show dropdown
   const [dropDown, setDropDown] = useState(false)
 
+  // if screen width >= 800px, close the dropdown
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 800) {
