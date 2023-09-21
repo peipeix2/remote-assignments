@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/remote-assignment/static/css/main.539fd155.css",
-    "main.js": "/remote-assignment/static/js/main.e17c100d.js",
-    "static/js/787.17e650d2.chunk.js": "/remote-assignment/static/js/787.17e650d2.chunk.js",
-    "static/media/landing_page_img.jpeg": "/remote-assignment/static/media/landing_page_img.313d51edda23fe80f6f1.jpeg",
-    "index.html": "/remote-assignment/index.html",
-    "main.539fd155.css.map": "/remote-assignment/static/css/main.539fd155.css.map",
-    "main.e17c100d.js.map": "/remote-assignment/static/js/main.e17c100d.js.map",
-    "787.17e650d2.chunk.js.map": "/remote-assignment/static/js/787.17e650d2.chunk.js.map"
+    "main.css": "/remote-assignments/static/css/main.27eaf477.css",
+    "main.js": "/remote-assignments/static/js/main.35d3df5b.js",
+    "static/js/787.17e650d2.chunk.js": "/remote-assignments/static/js/787.17e650d2.chunk.js",
+    "static/media/landing_page_img.jpeg": "/remote-assignments/static/media/landing_page_img.313d51edda23fe80f6f1.jpeg",
+    "index.html": "/remote-assignments/index.html",
+    "main.27eaf477.css.map": "/remote-assignments/static/css/main.27eaf477.css.map",
+    "main.35d3df5b.js.map": "/remote-assignments/static/js/main.35d3df5b.js.map",
+    "787.17e650d2.chunk.js.map": "/remote-assignments/static/js/787.17e650d2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.539fd155.css",
-    "static/js/main.e17c100d.js"
+    "static/css/main.27eaf477.css",
+    "static/js/main.35d3df5b.js"
   ]
 }
