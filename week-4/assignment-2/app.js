@@ -1,9 +1,13 @@
 const url = "https://remote-assignment.s3.ap-northeast-1.amazonaws.com/products";
 
 async function ajax(url) {
+  try {
   const response = await fetch(url)
   const data = await response.json()
   return data
+  } catch(error) {
+    console.error(`Something is wrong: ${error.message}`)
+  }
 }
 
 function render(data) {
