@@ -44,6 +44,12 @@ h1, h2, p, span {
   box-shadow: -25px 0px 50px rgba(6, 22, 141, 0.0442);
 }
 
+.hamburger-items.open {
+  position: fixed;
+  top: 0%;
+  right: 0px;
+}
+
 .nav-items ul li a {
   padding-left: 2em;
   text-decoration: none;
