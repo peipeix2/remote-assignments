@@ -3,18 +3,22 @@ import React, { useEffect, useState } from 'react'
 const linkData = [
   {
     name: 'About Us',
+    id: 1,
     link: 'https://www.google.com'
   },
   {
     name: 'Our Works',
+    id: 2,
     link: 'https://www.google.com'
   },
   {
     name: 'Our Partners',
+    id: 3,
     link: 'https://www.google.com'
   },
   {
     name: 'Contact Us',
+    id: 4,
     link: 'https://www.google.com'
   }
 ]
@@ -49,7 +53,7 @@ const NavItems = () => {
         <ul>
           {linkData.map(data => {
             return (
-              <li><a href={data.link}>{data.name}</a></li>
+              <li key={data.id}><a href={data.link}>{data.name}</a></li>
             )
           })}
         </ul>

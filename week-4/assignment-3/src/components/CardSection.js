@@ -3,30 +3,37 @@ import React, { useState } from 'react'
 const cardContent = [
   {
     name: 'Animation',
+    id: 1,
     content: 'Praesent arcu ipsum, sagittis luctus diam sed, tempus lacinia leo. Integer posuere nunc nec nisi elementum consectetur non non ante.'
   },
   {
     name: 'Design',
+    id: 2,
     content: 'Praesent arcu ipsum, sagittis luctus diam sed, tempus lacinia leo. Integer posuere nunc nec nisi elementum consectetur non non ante.'
   },
   {
     name: 'Photography',
+    id: 3,
     content: 'Praesent arcu ipsum, sagittis luctus diam sed, tempus lacinia leo. Integer posuere nunc nec nisi elementum consectetur non non ante.'
   },
   {
     name: 'Business',
+    id: 4,
     content: 'Praesent arcu ipsum, sagittis luctus diam sed, tempus lacinia leo. Integer posuere nunc nec nisi elementum consectetur non non ante.'
   },
   {
     name: 'Oil Painting',
+    id: 5,
     content: 'Praesent arcu ipsum, sagittis luctus diam sed, tempus lacinia leo. Integer posuere nunc nec nisi elementum consectetur non non ante.'
   },
   {
     name: 'Watercolor',
+    id: 6,
     content: 'Praesent arcu ipsum, sagittis luctus diam sed, tempus lacinia leo. Integer posuere nunc nec nisi elementum consectetur non non ante.'
   },
   {
     name: 'Cuisine',
+    id: 7,
     content: 'Praesent arcu ipsum, sagittis luctus diam sed, tempus lacinia leo. Integer posuere nunc nec nisi elementum consectetur non non ante.'
   },
   {
@@ -52,7 +59,7 @@ const CardSection = () => {
       <div className="card-container">
         {cardData.map(card => {
           return (
-          <div className="card">
+          <div className="card" key={card.id}>
           <p>{card.name}</p>
           <span>{card.content}</span>
         </div>
