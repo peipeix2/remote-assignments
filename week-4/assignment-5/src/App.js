@@ -34,9 +34,18 @@ function App() {
     ))
   }
 
+  const handlePlusAll = () => {
+    setCounterData(prevCounterData => prevCounterData.map(counter => {
+      return {
+        id: counter.id,
+        number: counter.number + 1
+      }
+    }))
+  }
+
   return (
     <div className='container'>
-      <AllPlusBtn />
+      <AllPlusBtn plusAll={handlePlusAll} />
       {/* render counters */}
       {counterData.map(counter => 
         <Counter 
