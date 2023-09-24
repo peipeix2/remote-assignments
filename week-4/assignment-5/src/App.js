@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Counter from './components/Counter';
 import './App.css';
 import AllPlusBtn from './components/AllPlusBtn';
+import AddCounterBtn from './components/AddCounterBtn';
 
 
 
@@ -54,7 +55,7 @@ function App() {
           number={counter.number}
           changeNumber={handleNumChange} />
       )}
-      
+      <AddCounterBtn />
     </div>
     
   );
