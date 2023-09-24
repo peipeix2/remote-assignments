@@ -1,7 +1,7 @@
 import React from 'react'
 
-const AddCounterBtn = () => {
-  return <button className='add-counter'>Add a Counter</button>
+const AddCounterBtn = (props) => {
+  return <button className='add-counter' onClick={props.addCounter}>Add a Counter</button>
 }
 
 export default AddCounterBtn
