@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Counter = () => {
+const Counter = (props) => {
   return (
     <div className='counter'>
       <button className='increment'>+1</button>
-      <p className='cur-number'>0</p>
+      <p className='cur-number'>{props.number}</p>
     </div>
   )
 }
