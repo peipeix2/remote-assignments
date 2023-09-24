@@ -34,16 +34,20 @@ function checkStatus(res) {
   }
 }
 
+function renderTopics(item) {
+  let topicsArray = item.topics
+  let topicsContent = ''
+  topicsArray.forEach(topic => {
+    topicsContent += `
+        <li>${topic}</li>
+      `
+  })
+  return topicsContent
+}
+
 function renderCard(data) {
   let contentHTML = ''
   data.forEach(item => {
-    let topicsArray = item.topics
-    let topicsContent = ''
-    topicsArray.forEach(topic => {
-      topicsContent += `
-        <li>${topic}</li>
-      `
-    })
     contentHTML += `
         <div class="card-container course">
           <div class="course-inner-card">
@@ -51,7 +55,7 @@ function renderCard(data) {
             <span>${item.visibility}</span>
             <p class="course-intro">${item.description}</p>
             <ul class='topics-wrapper'>
-              ${topicsContent}
+              ${renderTopics(item)}
             </ul>
           </div>
         </div>
