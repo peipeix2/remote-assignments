@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Counter from './components/Counter';
 import './App.css';
+import AllPlusBtn from './components/AllPlusBtn';
 
 
 
@@ -35,6 +36,7 @@ function App() {
 
   return (
     <div className='container'>
+      <AllPlusBtn />
       {/* render counters */}
       {counterData.map(counter => 
         <Counter 
