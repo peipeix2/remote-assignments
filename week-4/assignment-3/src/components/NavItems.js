@@ -35,7 +35,9 @@ const NavItems = () => {
       } 
     }
     window.addEventListener('resize', handleResize)
-  })
+    return () => {
+      window.removeEventListener('resize', handleResize)}
+  }, [])
 
   const handleDropdown = () => {
       setDropDown(true)
