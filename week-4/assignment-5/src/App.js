@@ -44,6 +44,18 @@ function App() {
     }))
   }
 
+  const handleAddCounter = () => {
+    setCounterData(prevCounterData => {
+      return [
+        ...prevCounterData,
+        {
+          id: prevCounterData.length + 1,
+          number: 0
+        }
+      ]
+    })
+  }
+
   return (
     <div className='container'>
       <AllPlusBtn plusAll={handlePlusAll} />
@@ -55,7 +67,7 @@ function App() {
           number={counter.number}
           changeNumber={handleNumChange} />
       )}
-      <AddCounterBtn />
+      <AddCounterBtn addCounter={handleAddCounter} />
     </div>
     
   );
