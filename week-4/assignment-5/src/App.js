@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'
 import Counter from './components/Counter';
 import './App.css';
 
 
 
 function App() {
-  const counterData = [
+  const [counterData, setCounterData] = useState([
     {
       id: 1,
       number: 0
@@ -18,15 +18,30 @@ function App() {
       id: 3,
       number: 0
     }
-  ]
+  ])
+
+  const handleNumChange = (id) => {
+    setCounterData(prevCounterData => prevCounterData.map(counter => {
+      if (counter.id === id) {
+        return {
+          id: counter.id,
+          number: counter.number + 1
+        }
+      }
+      return counter
+    }
+    ))
+  }
 
   return (
     <div className='container'>
       {/* render counters */}
       {counterData.map(counter => 
         <Counter 
-          id={counter.id} 
-          number={counter.number} />
+          key={counter.id}
+          id={counter.id}
+          number={counter.number}
+          changeNumber={handleNumChange} />
       )}
       
     </div>
