@@ -20,8 +20,18 @@ returnBtn.addEventListener('click', () => {
 
 function fetchData(url) {
   fetch(url)
+    .then(checkStatus)
     .then(res => res.json())
     .then(renderCard)
+    .catch(error => console.error(error))
+}
+
+function checkStatus(res) {
+  if (res.status === 200) {
+    return Promise.resolve(res)
+  } else {
+    return Promise.reject(new Error(res.statusText))
+  }
 }
 
 function renderCard(data) {
