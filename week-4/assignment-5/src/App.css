@@ -8,7 +8,7 @@
   align-items: center;
   width: 250px;
   height: 52px;
-  margin-bottom: 2em;
+  margin: 2em 0px;
 }
 
 .increment {
@@ -20,4 +20,8 @@
   width: 100px;
   margin: 0px;
   text-align: center;
+}
+
+.allplus {
+  height: 52px;
 }
