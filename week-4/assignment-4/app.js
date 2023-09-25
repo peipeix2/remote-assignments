@@ -13,11 +13,6 @@ readMore.addEventListener('click', () => {
   fetchData(url + `page=${page}`)
 })
 
-returnBtn.addEventListener('click', () => {
-  page -= 1
-  fetchData(url + `page=${page}`)
-})
-
 function fetchData(url) {
   fetch(url)
     .then(checkStatus)
@@ -60,9 +55,13 @@ function renderCard(data) {
           </div>
         </div>
     `
-    dataPanel.innerHTML = contentHTML
-    renderPage(page)
   })
+  if (page === 1) {
+    dataPanel.innerHTML = contentHTML
+  } else {
+    dataPanel.insertAdjacentHTML('beforeend', contentHTML)
+  }
+  renderPage(page)
 }
 
 function renderPage(page) {
