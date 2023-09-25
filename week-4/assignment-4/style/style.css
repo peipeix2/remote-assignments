@@ -93,12 +93,16 @@ li {
 
 .readmore-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .readmore-btn, .return-btn, .page-display p {
   border: none;
+  margin: 0px;
   font-size: 20px;
+  text-align: center;
+  background-color: transparent;
 }
 
 .readmore-btn:hover,
